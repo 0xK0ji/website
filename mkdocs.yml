@@ -11,7 +11,7 @@ theme:
   language: en # 中文，解决中文搜索问题
   features:
     - navigation.expand 
-    - tabs 
+    - navigation.tabs 
 markdown_extensions: 
   - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
   - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
