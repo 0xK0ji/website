@@ -12,6 +12,7 @@ theme:
   features:
     - navigation.expand 
     - navigation.tabs 
+    - toc.follow
 markdown_extensions: 
   - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
   - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
