@@ -7,12 +7,6 @@ Welcome to Foam-mkdocs-template! [[#support roamlinks]]!
 !!! note "Blablabla"
     test
 
-[!NOTE]
-Some useful note
-
-> [!NOTE]
-> Some useful note
-
 
 ## Support roamlinks
 
