@@ -10,6 +10,9 @@ Welcome to Foam-mkdocs-template! [[#support roamlinks]]!
 [!NOTE]
 Some useful note
 
+> [!NOTE]
+> Some useful note
+
 
 ## Support roamlinks
 
