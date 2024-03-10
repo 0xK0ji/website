@@ -1,47 +1,6 @@
 # Fondamentaux
 
-- [Fondamentaux](#fondamentaux)
-- [Exécuter du JavaScript](#exécuter-du-javascript)
-- [Vérifier le type d’une variable](#vérifier-le-type-dune-variable)
-- [Variable](#variable)
-- [Constante](#constante)
-- [Nombres](#nombres)
-- [Méthodes pour nombre](#méthodes-pour-nombre)
-- [Opérateur == et ===](#opérateur--et-)
-- [Strings](#strings)
-	- [Strings méthodes importantes](#strings-méthodes-importantes)
-- [Function](#function)
-	- [Function Déclaration](#function-déclaration)
-	- [Scope](#scope)
-	- [Anonyme Function \& Arrow Function](#anonyme-function--arrow-function)
-	- [Paramètre](#paramètre)
-		- [Valeur par défaut](#valeur-par-défaut)
-	- [Function Expression](#function-expression)
-- [Array](#array)
-- [Loop et collection](#loop-et-collection)
-- [DOM](#dom)
-	- [Cibler un node](#cibler-un-node)
-	- [Méthodes des node](#méthodes-des-node)
-		- [Query Selector](#query-selector)
-		- [getElementById()](#getelementbyid)
-		- [getElementsByName()](#getelementsbyname)
-		- [getElementsByTagName()](#getelementsbytagname)
-		- [getElementsByClassName()](#getelementsbyclassname)
-	- [Création d’un élément](#création-dun-élément)
-	- [Ajout de l’élement sur le DOM](#ajout-de-lélement-sur-le-dom)
-	- [Suppression d’un élément](#suppression-dun-élément)
-	- [Ajout de style inline](#ajout-de-style-inline)
-	- [Editer des attributs](#editer-des-attributs)
-	- [Travailler avec des classes](#travailler-avec-des-classes)
-	- [Ajouter du contenu texte](#ajouter-du-contenu-texte)
-	- [Ajouter du contenu HTML](#ajouter-du-contenu-html)
-	- [Délayer le contenu du javascript](#délayer-le-contenu-du-javascript)
-- [Events](#events)
-	- [Attacher un event listener à un groupe de node](#attacher-un-event-listener-à-un-groupe-de-node)
-	- [Liste des Events utiles](#liste-des-events-utiles)
-
-
-# Exécuter du JavaScript
+## Exécuter du JavaScript
 
 Deux méthodes possibles :
 
@@ -70,7 +29,7 @@ Deux méthodes possibles :
 typeof myint;
 ```
 
-# Variable
+## Variable
 
 ```jsx
 let message;
@@ -86,7 +45,7 @@ let _ = 2;
 alert($ + _); //3
 ```
 
-# Constante
+## Constante
 
 ```jsx
 
@@ -99,7 +58,7 @@ let color = COLOR_RED
 alert(color); // #FF7F00
 ```
 
-# Nombres
+## Nombres
 
 ```jsx
 // Javascript utilise l'operateur + pour additioné ou concaténer
@@ -139,7 +98,7 @@ myNumber.toString(16); //Affiche le nombre en base16
 let x = new Number(500);
 ```
 
-# Méthodes pour nombre
+## Méthodes pour nombre
 
 ```jsx
 // Cast un string en nombre : Number(x)
@@ -147,13 +106,13 @@ let z = "30";
 let y = Number(z) + 4; // 34
 ```
 
-# Opérateur == et ===
+## Opérateur == et ===
 
 - == : loose equality → converti les variables afin qu’elles soient du même type avant de les comparer. attention : les booléen sont convertis en nombre (1 ou 0)
 - === : strict equality → compare directement la valeur des variables
     - ! == : not equal to
 
-# Strings
+## Strings
 
 3 types de strings possible : 
 
@@ -240,19 +199,19 @@ StringArray = text1.split(); //La strings entiere est contenu à l'index 0
 
 ```
 
-# Function
+## Function
 
-## Function Déclaration
+### Function Déclaration
 
 ```jsx
 function name(paramter..) {return x;}
 ```
 
-## Scope
+### Scope
 
 Les functions peuvent utilisé des variables exterieur seulement si elles n’existent pas localement dans la fonction. **mieux vaut minimiser l’utilisation de variable global**.
 
-## Anonyme Function & Arrow Function
+### Anonyme Function & Arrow Function
 
 ```jsx
 //Anonymous function : fonction sans nom
@@ -271,17 +230,17 @@ textBox.addEventListener("keydown", event => { codeblock..;});
 x = orginals.map(item => item * 2);
 ```
 
-## Paramètre
+### Paramètre
 
 Si une valeur n’est pas passé à un paramètre, alors sa valeur est **undefined**
 
-### Valeur par défaut
+#### Valeur par défaut
 
 ```jsx
 function name(param1 = "test", param2)
 ```
 
-## Function Expression
+### Function Expression
 
 Il est possible de créer une nouvelle fonction au milieu d’une expression, et même stocker dans une variable : 
 
@@ -298,7 +257,7 @@ func(); //Hello
 sayHi(); //Hello
 ```
 
-# Array
+## Array
 
 Les array en javascript sont des objets. Nous pouvons mélanger n’importe quel type de donnée.
 
@@ -344,7 +303,7 @@ function myFonction(value) { console.log(value); }
 arr.forEach(myFonction);
 ```
 
-# Loop et collection
+## Loop et collection
 
 ```jsx
 //Looper sur une collection
@@ -363,7 +322,7 @@ const cats = ["felix","catty","lol"]
 const catsfiltered = cats.filter(fCat);
 ```
 
-# DOM
+## DOM
 
 Le DOM (document object model) est une representation tree-like d’une page web.
 
@@ -379,9 +338,9 @@ console.dir(container.firstElementChild);
 //Selectione le première enfin de #container
 ```
 
-## Méthodes des node
+### Méthodes des node
 
-### Query Selector
+#### Query Selector
 
 Il est important de noté que la méthode “querySelectorAll” ne retourne pas un array mais bien une nodelist. Une nodelist n’a pas toutes les méthodes d’un array. Cependant, on peut convertir la nodelist en array avec la fonction `Array.from()`
 
@@ -395,7 +354,7 @@ element.querySelector(selector)
 element.querySelectorAll(selector)
 ```
 
-### getElementById()
+#### getElementById()
 ```html
 <div id='message'></div>
 ```
@@ -403,7 +362,7 @@ element.querySelectorAll(selector)
 const ele = document.getElementById('message');
 ```
 
-### getElementsByName()
+#### getElementsByName()
 Retourne une `Node List` de tous les éléments HTML qui partage la même valeur pour l'attribut `name`.
 ```html
 <div name="boite"></div>
@@ -412,7 +371,7 @@ Retourne une `Node List` de tous les éléments HTML qui partage la même valeur
 const ele = document.getElementByName('boite');
 ```
 
-### getElementsByTagName()
+#### getElementsByTagName()
 Est une méthode de l'objet `document` qui retourne une `Node List` de tous les éléments HTML qui partage le même `tag`.
 ```html
 <div>bla</div>
@@ -420,13 +379,13 @@ Est une méthode de l'objet `document` qui retourne une `Node List` de tous les 
 ```jsx
 const ele = document=getElementsByTagName('div');
 ```
-### getElementsByClassName()
+#### getElementsByClassName()
 Retourne un objet array-like des éléments enfant avec le nom de classe spécifié.
 ```jsx
 const elements = rootElement.getElementsByClassName(names);
 ```
 
-## Création d’un élément
+### Création d’un élément
 
 ```jsx
 //document.createElement(tagName, [options])
@@ -436,7 +395,7 @@ const div = document.createElement('div');
 
 Il faut noté que cette méthode ne place pas l’élément dans le DOM (il est créé en mémoire), cela permet notamment de manipuler l’élement (ajout de style..) avant de le placer sur la page.
 
-## Ajout de l’élement sur le DOM
+### Ajout de l’élement sur le DOM
 
 Pour l’ajouter sur la page, on peut utiliser les méthode suivantes : 
 
@@ -448,14 +407,14 @@ parentNode.appendChild(childNode)
 parentNode.insertBefore(newNode, referenceNode)
 ```
 
-## Suppression d’un élément
+### Suppression d’un élément
 
 ```jsx
 // Supprime child de parentNode sur le DOM et retourne une reference à child
 parentNode.removeChild(child)
 ```
 
-## Ajout de style inline
+### Ajout de style inline
 
 ```jsx
 //Ajout de la règle de style indiqué
@@ -477,7 +436,7 @@ div.style['background-color'] // also works
 div.style.cssText = "background-color: white;" // sets the div's background-color by assigning a CSS string
 ```
 
-## Editer des attributs
+### Editer des attributs
 
 ```jsx
 div.setAttribute('id', 'theDiv');                              
@@ -492,7 +451,7 @@ div.removeAttribute('id');
 // removes specified attribute
 ```
 
-## Travailler avec des classes
+### Travailler avec des classes
 
 ```jsx
 //Ajouter une class à un élément
@@ -506,7 +465,7 @@ div.classList.remove('new);
 div.classList.toggle('new');
 ```
 
-## Ajouter du contenu texte
+### Ajouter du contenu texte
 
 ```jsx
 div.textContent = 'Hello World!'                               
@@ -514,7 +473,7 @@ div.textContent = 'Hello World!'
 // et l'insert dans div
 ```
 
-## Ajouter du contenu HTML
+### Ajouter du contenu HTML
 
 ```jsx
 div.innerHTML = '<span>Hello World!</span>';
@@ -523,7 +482,7 @@ div.innerHTML = '<span>Hello World!</span>';
 
 Attention : il vaut mieux ajouter du texte via **textContent** plutot que via l’ajout d’HTML, car cela peut engendrer un risque de sécurité.
 
-## Délayer le contenu du javascript
+### Délayer le contenu du javascript
 
 Pour manipuler le DOM, il faut que le javascript soit appelé avant sa création. Pour cela, on peut utiliser deux méthodes :
 
@@ -536,7 +495,7 @@ Pour manipuler le DOM, il faut que le javascript soit appelé avant sa création
 </head>
 ```
 
-# Events
+## Events
 
 Les Events sont des actions qui sont réalisées sur notre page tel que un clic-souris ou un keypress, et utilise JavaScript pour que notre page web écoute et réagit à ses evenements.
 
@@ -601,7 +560,7 @@ btn.addEventListener('click', () => {
     ```
     
 
-## Attacher un event listener à un groupe de node
+### Attacher un event listener à un groupe de node
 
 Pour ça on selectionne plusieurs node avec `document.querySelectorAll(’element’)` couplé avec `nodelist.forEach()`
 
@@ -626,7 +585,7 @@ buttons.forEach((button) => {
 });
 ```
 
-## Liste des Events utiles
+### Liste des Events utiles
 
 - click
 - dblclick
