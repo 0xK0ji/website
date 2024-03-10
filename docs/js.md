@@ -23,7 +23,7 @@ Deux méthodes possibles :
 </body>
 ```
 
-# Vérifier le type d’une variable
+## Vérifier le type d’une variable
 
 ```jsx
 typeof myint;
