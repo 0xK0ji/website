@@ -9,7 +9,7 @@
 
 aaa
 ## 样例
-
+lol
 * [github page](https://jackiexiao.github.io/foam-mkdocs-template/)
 * 国内访问[gitee page](https://jackiegeek.gitee.io/foam-mkdocs-template/)
 
