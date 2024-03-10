@@ -7,7 +7,7 @@
 弄好之后你的网站长这个样子：
 ![foam-mkdocs-template-png](demo-mkdocs.png)
 
-
+aaa
 ## 样例
 
 * [github page](https://jackiexiao.github.io/foam-mkdocs-template/)
