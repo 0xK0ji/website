@@ -36,7 +36,7 @@ aaa
 3. 按前面的步骤，再次部署Gitee Page 
 aa
 ## 本地部署
-
+bb
 经常性的，我们需要本地部署文档，来进行频繁的修改和预览。最简单的方法是进入你的文件夹（仓库本地地址，也就是`docs`文件夹的上一级），你的python需要3.6以上
 ```
 pip install -U -r requirements.txt
