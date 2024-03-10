@@ -24,7 +24,7 @@ Deux méthodes possibles :
 ```
 
 ## Vérifier le type d’une variable
-a
+
 ```jsx
 typeof myint;
 ```
