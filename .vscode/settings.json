@@ -1,5 +1,5 @@
   {
-  "gitdoc.enabled": true,
+  "gitdoc.enabled": false,
   "excalidraw.theme": "auto",
   "excalidraw.image": {
     "exportScale": 1,
